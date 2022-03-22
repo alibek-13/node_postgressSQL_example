@@ -1,5 +1,5 @@
-const Router = require ("express")
-const authcontroller = require("../controller/user.controller.js") 
+import Router from "express"
+import authcontroller from "../controller/user.controller.js"
 
 const router = new Router();
 
@@ -10,4 +10,4 @@ router.put('/user', authcontroller.updateUser)
 router.delete('/user/:id', authcontroller.deleteUser)
 
 
-module.exports = router;
+export default router;

@@ -1,6 +1,8 @@
-const Pool = require('pg').Pool
- 
-const pool = new Pool({
+import pkg from 'pg';
+
+const { Pool } = pkg;
+
+export const pool = new Pool({
     user: 'postgres',
     password: '025715259',
     host: 'localhost',
@@ -8,4 +10,3 @@ const pool = new Pool({
     database: 'shop_node'
 })
 
-module.exports = pool 
